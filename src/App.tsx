@@ -1,57 +1,78 @@
-import React, { useState } from "react";
-import { Layout, Typography, theme } from "antd";
+import { Layout, Menu } from "antd";
 import { Toaster } from "react-hot-toast";
+import { Link } from "react-router-dom";
+import Lap2 from "./lap/lap2.tsx";
+import Lap1 from "./lap/lap1.tsx";
+import { useState } from "react";
 
-import { User } from "./type";
+const { Sider, Content } = Layout;
 
-import { Sidebar } from "./dashboard/Sidebar";
-import { Header } from "./dashboard/Header";
-import { RegisterForm } from "./dashboard/RegisterForm";
-import { UserTable } from "./dashboard/UserTable";
-import { AddUserModal } from "./dashboard/AddUserModal";
-
-const { Content } = Layout;
-const initialUsers: User[] = [
-  ({ id: "1", name: "Nguyễn Minh An", email: "an.nguyen@vidu.com", role: "Admin" } as unknown) as User,
-  ({ id: "2", name: "Trần Bảo Châu", email: "chau.tran@vidu.com", role: "Editor" } as unknown) as User,
-  ({ id: "3", name: "Lê Hoàng Long", email: "long.le@vidu.com", role: "Viewer" } as unknown) as User,
-];
-
-export default function App() {
-  const [users, setUsers] = useState<User[]>(initialUsers);
-  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
-  const handleAddUser = (newUser: User) => {
-    setUsers([...users, newUser]);
-  };
-
-  const handleRemoveUser = (id: string) => {
-    setUsers(users.filter((user) => (user as any).id !== id));
-  };
-
+function App() {
+  const [selectedKey, setSelectedKey] = useState("1");
   return (
     <>
-      <Layout style={{ minHeight: "100vh" }}>
-        <Sidebar userCount={users.length} />
-        
+      <nav className="bg-blue-600 text-white shadow">
+        <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+          <Link to="#" className="text-xl font-semibold">
+            <strong>WEB2091 App</strong>
+          </Link>
+
+          <div className="hidden md:flex items-center space-x-8">
+            <Link to="#" className="hover:text-gray-200">
+              Trang chủ
+            </Link>
+            <Link to="/list" className="hover:text-gray-200">
+              Danh sách
+            </Link>
+            <Link to="/add" className="hover:text-gray-200">
+              Thêm mới
+            </Link>
+          </div>
+
+          <div className="hidden md:flex items-center space-x-6">
+            <Link to="#" className="hover:text-gray-200">
+              Đăng nhập
+            </Link>
+            <Link to="#" className="hover:text-gray-200">
+              Đăng ký
+            </Link>
+          </div>
+        </div>
+      </nav>
+
+      <Layout style={{ minHeight: "calc(100vh - 64px)" }}>
+        <Sider>
+          <div style={{ color: "white", padding: 16, fontWeight: "bold" }}>
+            Dashboard
+          </div>
+          <Menu
+            onClick={(e) => setSelectedKey(e.key)}
+            theme="dark"
+            mode="inline"
+            selectedKeys={[selectedKey]}
+            items={[
+              { key: "1", label: "Lap1" },
+              { key: "2", label: "Lap2" },
+            ]}
+          />
+        </Sider>
+
         <Layout>
-          <Header />
-          <Content style={{ margin: "24px 16px", padding: 24, minHeight: 280 }}>
-            <RegisterForm />
-            <UserTable 
-              users={users} 
-              onRemoveUser={handleRemoveUser} 
-              onOpenModal={() => setIsModalOpen(true)} 
-            />
+          <Content style={{ padding: 24 }}>
+            <div className="max-w-6xl mx-auto mt-10 px-4 text-center">
+              <h1 className="text-4xl font-bold mb-4">
+                Chào mừng đến với WEB2091
+              </h1>
+              {selectedKey === "1" && <Lap1 />}
+              {selectedKey === "2" && <Lap2 />}
+            </div>
           </Content>
         </Layout>
       </Layout>
-      <AddUserModal 
-        isOpen={isModalOpen} 
-        onClose={() => setIsModalOpen(false)} 
-        onAddUser={handleAddUser} 
-      />
 
       <Toaster />
     </>
   );
 }
+
+export default App;
