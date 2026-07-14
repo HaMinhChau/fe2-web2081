@@ -1,3 +1,84 @@
 {
-  "stories": []
+  "stories": [
+    {
+      "id": 1,
+      "title": "One Piece",
+      "author": "Eiichiro Oda",
+      "genre": "Phiêu lưu",
+      "image": "https://picsum.photos/200/300?random=1",
+      "createdAt": "2026-07-14T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "title": "Naruto",
+      "author": "Masashi Kishimoto",
+      "genre": "Hành động",
+      "image": "https://picsum.photos/200/300?random=2",
+      "createdAt": "2026-07-14T10:00:00Z"
+    },
+    {
+      "id": 3,
+      "title": "Attack on Titan",
+      "author": "Hajime Isayama",
+      "genre": "Hành động",
+      "image": "https://picsum.photos/200/300?random=3",
+      "createdAt": "2026-07-14T10:00:00Z"
+    },
+    {
+      "id": 4,
+      "title": "Demon Slayer",
+      "author": "Koyoharu Gotouge",
+      "genre": "Kiếm hiệp",
+      "image": "https://picsum.photos/200/300?random=4",
+      "createdAt": "2026-07-14T10:00:00Z"
+    },
+    {
+      "id": 5,
+      "title": "Jujutsu Kaisen",
+      "author": "Gege Akutami",
+      "genre": "Siêu nhiên",
+      "image": "https://picsum.photos/200/300?random=5",
+      "createdAt": "2026-07-14T10:00:00Z"
+    },
+    {
+      "id": 6,
+      "title": "My Hero Academia",
+      "author": "Kohei Horikoshi",
+      "genre": "Siêu anh hùng",
+      "image": "https://picsum.photos/200/300?random=6",
+      "createdAt": "2026-07-14T10:00:00Z"
+    },
+    {
+      "id": 7,
+      "title": "Death Note",
+      "author": "Tsugumi Ohba",
+      "genre": "Tâm lý, trinh thám",
+      "image": "https://picsum.photos/200/300?random=7",
+      "createdAt": "2026-07-14T10:00:00Z"
+    },
+    {
+      "id": 8,
+      "title": "Dragon Ball",
+      "author": "Akira Toriyama",
+      "genre": "Hành động, phiêu lưu",
+      "image": "https://picsum.photos/200/300?random=8",
+      "createdAt": "2026-07-14T10:00:00Z"
+    },
+    {
+      "id": 9,
+      "title": "Bleach",
+      "author": "Tite Kubo",
+      "genre": "Hành động, siêu nhiên",
+      "image": "https://picsum.photos/200/300?random=9",
+      "createdAt": "2026-07-14T10:00:00Z"
+    },
+    {
+      "id": 10,
+      "title": "Fairy Tail",
+      "author": "Hiro Mashima",
+      "genre": "Phiêu lưu, phép thuật",
+      "image": "https://picsum.photos/200/300?random=10",
+      "createdAt": "2026-07-14T10:00:00Z"
+    }
+  ]
 }

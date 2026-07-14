@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Lap2 from "./lap/lap2.tsx";
 import Lap1 from "./lap/lap1.tsx";
 import Lap3 from "./lap/lap3.tsx";
+import Lap4 from "./lap/lap4.tsx";
 import { useState } from "react";
 
 const { Sider, Content } = Layout;
@@ -55,6 +56,7 @@ function App() {
               { key: "1", label: "Lap1" },
               { key: "2", label: "Lap2" },
               { key: "3", label: "Lap3" },
+              { key: "4", label: "Lap4" },
             ]}
           />
         </Sider>
@@ -68,6 +70,7 @@ function App() {
               {selectedKey === "1" && <Lap1 />}
               {selectedKey === "2" && <Lap2 />}
               {selectedKey === "3" && <Lap3 />}
+              {selectedKey === "4" && <Lap4 />}
             </div>
           </Content>
         </Layout>

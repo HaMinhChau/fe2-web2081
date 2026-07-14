@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Form, Input, InputNumber, Button, Select } from "antd";
 
-function App() {
+function Lap3() {
   const [post, setPost] = useState<any>(null);
 
   return (
@@ -219,4 +219,4 @@ function App() {
   );
 }
 
-export default App;
+export default Lap3;
