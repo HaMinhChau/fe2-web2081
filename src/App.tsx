@@ -3,6 +3,7 @@ import { Toaster } from "react-hot-toast";
 import { Link } from "react-router-dom";
 import Lap2 from "./lap/lap2.tsx";
 import Lap1 from "./lap/lap1.tsx";
+import Lap3 from "./lap/lap3.tsx";
 import { useState } from "react";
 
 const { Sider, Content } = Layout;
@@ -53,6 +54,7 @@ function App() {
             items={[
               { key: "1", label: "Lap1" },
               { key: "2", label: "Lap2" },
+              { key: "3", label: "Lap3" },
             ]}
           />
         </Sider>
@@ -65,6 +67,7 @@ function App() {
               </h1>
               {selectedKey === "1" && <Lap1 />}
               {selectedKey === "2" && <Lap2 />}
+              {selectedKey === "3" && <Lap3 />}
             </div>
           </Content>
         </Layout>
