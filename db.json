@@ -2,83 +2,121 @@
   "stories": [
     {
       "id": 1,
-      "title": "One Piece",
-      "author": "Eiichiro Oda",
-      "genre": "Phiêu lưu",
-      "image": "https://picsum.photos/200/300?random=1",
+      "title": "Dragon Ball",
+      "author": "Akira Toriyama",
+      "genre": "Hành động, Phiêu lưu",
+      "image": "https://covers.openlibrary.org/b/isbn/9781569319208-L.jpg",
       "createdAt": "2026-07-14T10:00:00Z"
     },
     {
       "id": 2,
-      "title": "Naruto",
-      "author": "Masashi Kishimoto",
+      "title": "Attack On Titan",
+      "author": "Hajime Isayama",
       "genre": "Hành động",
-      "image": "https://picsum.photos/200/300?random=2",
-      "createdAt": "2026-07-14T10:00:00Z"
+      "image": "https://covers.openlibrary.org/b/isbn/9781612620244-L.jpg",
+      "createdAt": "2026-07-14T11:00:00Z"
     },
     {
       "id": 3,
-      "title": "Attack on Titan",
-      "author": "Hajime Isayama",
-      "genre": "Hành động",
-      "image": "https://picsum.photos/200/300?random=3",
-      "createdAt": "2026-07-14T10:00:00Z"
+      "title": "Bleach",
+      "author": "Tite Kubo",
+      "genre": "Hành động, Siêu nhiên",
+      "image": "https://covers.openlibrary.org/b/isbn/9781591164418-L.jpg",
+      "createdAt": "2026-07-14T12:00:00Z"
     },
     {
       "id": 4,
-      "title": "Demon Slayer",
-      "author": "Koyoharu Gotouge",
-      "genre": "Kiếm hiệp",
-      "image": "https://picsum.photos/200/300?random=4",
-      "createdAt": "2026-07-14T10:00:00Z"
+      "title": "One Piece",
+      "author": "Eiichiro Oda",
+      "genre": "Phiêu lưu",
+      "image": "https://covers.openlibrary.org/b/isbn/9781569319017-L.jpg",
+      "createdAt": "2026-07-15T08:30:00Z"
     },
     {
       "id": 5,
-      "title": "Jujutsu Kaisen",
-      "author": "Gege Akutami",
-      "genre": "Siêu nhiên",
-      "image": "https://picsum.photos/200/300?random=5",
-      "createdAt": "2026-07-14T10:00:00Z"
+      "title": "Naruto",
+      "author": "Masashi Kishimoto",
+      "genre": "Hành động",
+      "image": "https://covers.openlibrary.org/b/isbn/9781569319000-L.jpg",
+      "createdAt": "2026-07-15T09:30:00Z"
     },
     {
       "id": 6,
-      "title": "My Hero Academia",
-      "author": "Kohei Horikoshi",
-      "genre": "Siêu anh hùng",
-      "image": "https://picsum.photos/200/300?random=6",
-      "createdAt": "2026-07-14T10:00:00Z"
+      "title": "Demon Slayer",
+      "author": "Koyoharu Gotouge",
+      "genre": "Kiếm hiệp",
+      "image": "https://covers.openlibrary.org/b/isbn/9781974700523-L.jpg",
+      "createdAt": "2026-07-15T14:00:00Z"
     },
     {
       "id": 7,
-      "title": "Death Note",
-      "author": "Tsugumi Ohba",
-      "genre": "Tâm lý, trinh thám",
-      "image": "https://picsum.photos/200/300?random=7",
-      "createdAt": "2026-07-14T10:00:00Z"
+      "title": "Jujutsu Kaisen",
+      "author": "Gege Akutami",
+      "genre": "Siêu nhiên",
+      "image": "https://covers.openlibrary.org/b/isbn/9781974710027-L.jpg",
+      "createdAt": "2026-07-16T09:00:00Z"
     },
     {
       "id": 8,
-      "title": "Dragon Ball",
-      "author": "Akira Toriyama",
-      "genre": "Hành động, phiêu lưu",
-      "image": "https://picsum.photos/200/300?random=8",
-      "createdAt": "2026-07-14T10:00:00Z"
+      "title": "Death Note",
+      "author": "Tsugumi Ohba",
+      "genre": "Trinh thám, Tâm lý",
+      "image": "https://covers.openlibrary.org/b/isbn/9781421501680-L.jpg",
+      "createdAt": "2026-07-16T10:30:00Z"
     },
     {
       "id": 9,
-      "title": "Bleach",
-      "author": "Tite Kubo",
-      "genre": "Hành động, siêu nhiên",
-      "image": "https://picsum.photos/200/300?random=9",
-      "createdAt": "2026-07-14T10:00:00Z"
+      "title": "Fairy Tail",
+      "author": "Hiro Mashima",
+      "genre": "Phiêu lưu, Phép thuật",
+      "image": "https://covers.openlibrary.org/b/isbn/9781612620244-L.jpg",
+      "createdAt": "2026-07-16T11:30:00Z"
     },
     {
       "id": 10,
-      "title": "Fairy Tail",
-      "author": "Hiro Mashima",
-      "genre": "Phiêu lưu, phép thuật",
-      "image": "https://picsum.photos/200/300?random=10",
-      "createdAt": "2026-07-14T10:00:00Z"
+      "title": "My Hero Academia",
+      "author": "Kohei Horikoshi",
+      "genre": "Siêu anh hùng",
+      "image": "https://covers.openlibrary.org/b/isbn/9781421582696-L.jpg",
+      "createdAt": "2026-07-16T13:00:00Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "title": "Phiêu lưu"
+    },
+    {
+      "id": 2,
+      "title": "Hành động"
+    },
+    {
+      "id": 3,
+      "title": "Kiếm hiệp"
+    },
+    {
+      "id": 4,
+      "title": "Siêu nhiên"
+    },
+    {
+      "id": 5,
+      "title": "Siêu anh hùng"
+    },
+    {
+      "id": 6,
+      "title": "Tâm lý, trinh thám"
+    },
+    {
+      "id": 7,
+      "title": "Hành động, phiêu lưu"
+    },
+    {
+      "id": 8,
+      "title": "Hành động, siêu nhiên"
+    },
+    {
+      "id": 9,
+      "title": "Phiêu lưu, phép thuật"
     }
   ]
 }
